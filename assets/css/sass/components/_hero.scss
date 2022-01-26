@@ -1,0 +1,133 @@
+.hero{
+
+    .image-column{
+        .img{  
+            background-size: cover;
+            object-fit:cover;
+            width: 100vw;
+            height: 50vh;
+         }
+    }
+
+
+    .info-column{
+    
+        .claim{  
+        background-color: $white;
+        padding: 1rem;
+        
+
+            h1{
+                font-family: $old-standard;
+                text-transform: uppercase;
+                color: $smoky-black;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-family: $raleway;
+                color: $granite-gray;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                margin-bottom: 1rem;
+            }
+
+            
+         }
+         
+         .claim-button{
+                border-color:$smoky-black;
+                border-width: 1px;
+                color: $smoky-black;
+                font-family: $raleway;
+                font-weight: $raleway-bold;
+                font-size: 1.5rem;
+                line-height: 2.5rem;
+                padding: 0.5rem 1.5rem;
+                margin-bottom: 3rem;
+            }
+
+
+        .subcription{  
+        background-color: $smoky-black;
+        height: 285px;
+        width: 100%;
+        padding: 3rem 0 3rem 2rem;
+        font-family: $old-standard;
+        color: $white;
+        position: relative;
+
+        .subcription-title{
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+         }
+
+         .subcription-text{
+            font-size: 1.3rem;
+         }
+
+         .subcription-mail{
+            display: block;
+            font-size: 1rem;
+            padding: 1rem;
+            margin-top:  0.5rem;
+            width: 250px;
+         }
+        }
+
+    }  
+ }
+ 
+ /*media queries*/
+
+ //pantalla celular
+@media (min-width: 53px){
+
+}
+
+
+ //pantalla tablet
+@media (min-width: 720px){
+
+    .claim{
+        padding: 2rem 3rem 2rem 3rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+        line-height: 2rem;
+        margin-bottom: 0.8rem;
+        margin-right: 1rem;
+    }
+ 
+ .claim-button{
+        font-size: 0.8rem;
+        line-height: auto;
+        padding: 0.4rem 1.2rem;
+        margin-bottom: -2rem;
+    }
+}
+
+
+ //pantalla pc
+@media (min-width: 960px) {
+    .image-column{
+        position: absolute;
+        right: 0;
+        width: 50vw;
+
+    }
+
+     .info-column{
+        position: absolute;
+        left: 0;
+        width: 50vw;
+    }
+
+    
+}

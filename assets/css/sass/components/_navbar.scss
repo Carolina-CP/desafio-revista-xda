@@ -1,0 +1,144 @@
+
+nav{
+    background-color: $white;
+    height: 90px;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    align-content:flex-end;
+
+
+    .enlace{
+        height: 90px;
+        width: 90px;
+        background-color: $smoky-black;
+        font-family: $old-standard;
+        font-size: $font-size-x-large;
+        color: $white;
+        line-height: 5rem;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        
+            .logo{
+                position: relative;
+                left: 20PX;
+                top: 10PX;
+            }
+
+        
+    }
+
+    ul{
+        display: flex;
+        justify-content: center;
+
+        li{
+            margin: 0 5px;
+            
+
+            a{
+                font-family: $raleway;
+                color:$smoky-black;
+                font-size: 18px;
+                padding: 7px 13px;
+            }
+
+            a:hover{
+                color: $quick-silver;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    
+    .checkbtn{
+        font-size: 30px;
+        color: $smoky-black;
+        cursor: pointer;
+        
+    }
+
+}
+
+/*media queries*/
+
+//pantalla celular
+@media (min-width: 53px) {
+    nav{
+        background-color: $white;
+        ul{
+            display: block;
+            position: fixed;
+            top: 90px;
+            left: 0;
+            width: 40vw;
+            height: 10rem;
+            line-height: 2rem;
+            padding-top: 1rem;
+            background-color: $quick-silver;
+
+            a{ 
+              font-size: 16px;  
+            }
+            
+        }
+        .checkbtn{
+            position: absolute;
+            right: 10%;
+        }
+
+    }
+}
+
+
+//pantalla tablet
+@media (min-width: 720px) {
+    nav{
+        background-color: $white;
+        ul{
+            display: inline-block;
+            align-items: center;
+            position: fixed; 
+            right: 10%;
+            
+              li{
+              
+                background-color: $white;
+              font-size: 30px;
+            }
+
+        }
+        .checkbtn{
+            display: none;
+        }
+
+    }
+}
+
+
+//pantalla pc
+
+@media (min-width: 960px) {
+    nav{
+        background-color: $white;
+        ul{
+            display:inline-block;
+            align-items: center;
+            position: fixed; 
+            right: 5%;
+            
+              li{
+              
+                background-color: $white;
+              font-size: 40px;
+            }
+
+        }
+        .checkbtn{
+            display: none;
+        }
+
+    }
+}

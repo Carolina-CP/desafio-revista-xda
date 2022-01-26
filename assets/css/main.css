@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #fff;
+  height: 90px;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+}
+
+nav .enlace {
+  height: 90px;
+  width: 90px;
+  background-color: #0c0910;
+  font-family: "Old Standard TT";
+  font-size: 20px;
+  color: #fff;
+  line-height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+nav .enlace .logo {
+  position: relative;
+  left: 20PX;
+  top: 10PX;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  font-family: "Raleway";
+  color: #0c0910;
+  font-size: 18px;
+  padding: 7px 13px;
+}
+
+nav ul li a:hover {
+  color: #a6a5a8;
+  transition: 0.5s;
+}
+
+nav .checkbtn {
+  font-size: 30px;
+  color: #0c0910;
+  cursor: pointer;
+}
+
+/*media queries*/
+@media (min-width: 53px) {
+  nav {
+    background-color: #fff;
+  }
+  nav ul {
+    display: block;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 40vw;
+    height: 10rem;
+    line-height: 2rem;
+    padding-top: 1rem;
+    background-color: #a6a5a8;
+  }
+  nav ul a {
+    font-size: 16px;
+  }
+  nav .checkbtn {
+    position: absolute;
+    right: 10%;
+  }
+}
+
+@media (min-width: 720px) {
+  nav {
+    background-color: #fff;
+  }
+  nav ul {
+    display: inline-block;
+    align-items: center;
+    position: fixed;
+    right: 10%;
+  }
+  nav ul li {
+    background-color: #fff;
+    font-size: 30px;
+  }
+  nav .checkbtn {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  nav {
+    background-color: #fff;
+  }
+  nav ul {
+    display: inline-block;
+    align-items: center;
+    position: fixed;
+    right: 5%;
+  }
+  nav ul li {
+    background-color: #fff;
+    font-size: 40px;
+  }
+  nav .checkbtn {
+    display: none;
+  }
+}
+
+.hero .image-column .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero .info-column .claim {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.hero .info-column .claim h1 {
+  font-family: "Old Standard TT";
+  text-transform: uppercase;
+  color: #0c0910;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .info-column .claim p {
+  font-family: "Raleway";
+  color: #646266;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero .info-column .claim-button {
+  border-color: #0c0910;
+  border-width: 1px;
+  color: #0c0910;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.hero .info-column .subcription {
+  background-color: #0c0910;
+  height: 285px;
+  width: 100%;
+  padding: 3rem 0 3rem 2rem;
+  font-family: "Old Standard TT";
+  color: #fff;
+  position: relative;
+}
+
+.hero .info-column .subcription .subcription-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .info-column .subcription .subcription-text {
+  font-size: 1.3rem;
+}
+
+.hero .info-column .subcription .subcription-mail {
+  display: block;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  width: 250px;
+}
+
+/*media queries*/
+@media (min-width: 720px) {
+  .claim {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 2rem;
+    margin-bottom: 0.8rem;
+    margin-right: 1rem;
+  }
+  .claim-button {
+    font-size: 0.8rem;
+    line-height: auto;
+    padding: 0.4rem 1.2rem;
+    margin-bottom: -2rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .image-column {
+    position: absolute;
+    right: 0;
+    width: 50vw;
+  }
+  .info-column {
+    position: absolute;
+    left: 0;
+    width: 50vw;
+  }
+}
